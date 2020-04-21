@@ -46,10 +46,4 @@ RUN \
   apt-get install -y python python-dev python-pip python-virtualenv && \
   rm -rf /var/lib/apt/lists/*
 
-RUN npm install && \
-    npm install cordova-res && \
-    npm run build
-
-RUN ionic cordova resources  && \
-    ionic cordova platform add android && \
-    ionic cordova build android
+RUN npm install cordova-res
