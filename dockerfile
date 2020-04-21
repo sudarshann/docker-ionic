@@ -39,7 +39,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | b
 
 RUN npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} && \
     npm i -g --unsafe-perm ionic@${IONIC_VERSION} && \
-RUN ionic --no-interactive config set -g daemon.updates false
+    ionic --no-interactive config set -g daemon.updates false
 
 RUN \
   apt-get update && \
